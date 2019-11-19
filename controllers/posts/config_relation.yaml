@@ -9,6 +9,7 @@ comments:
     readOnly: true
     manage:
         context: relation
+        filter: config_filters_comments.yaml
 
 status:
     label: Status

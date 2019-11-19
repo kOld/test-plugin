@@ -53,13 +53,15 @@ class SeedAllTables extends Seeder
 
         $post->comments()->create([
             'name' => 'deadmau5',
-            'content' => 'Hai fwiend, hai fwiend, hai fwiend, hai fwiend, hai fwiend. Brrrrrup bloop. Brrrrrp bloop. Brrrrrp bloop. Brrrrrp bloop.'
+            'content' => 'Hai fwiend, hai fwiend, hai fwiend, hai fwiend, hai fwiend. Brrrrrup bloop. Brrrrrp bloop. Brrrrrp bloop. Brrrrrp bloop.',
+            'user_id' => 1
         ]);
 
         $post->comments()->create([
             'name' => 'Hidden comment',
             'content' => 'This comment should be hidden as defined in the relationship.',
-            'is_visible' => false
+            'is_visible' => false,
+            'user_id' => 2
         ]);
 
         /*

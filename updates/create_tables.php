@@ -58,6 +58,7 @@ class CreateTables extends Migration
             $table->boolean('is_published')->default(false);
             $table->timestamp('published_at')->nullable();
             $table->integer('status_id')->unsigned()->nullable()->index();
+            $table->integer('user_id')->unsigned()->nullable()->index();
             $table->timestamps();
         });
 

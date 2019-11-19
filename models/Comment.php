@@ -62,4 +62,9 @@ class Comment extends Model
             'trolling' => "Just trollin' y'all",
         ];
     }
+
+    public function scopeFilterByUser($query, $filter)
+    {
+        return $query->whereIn('user_id', $filter);
+    }
 }

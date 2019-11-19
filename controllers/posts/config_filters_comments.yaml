@@ -1,0 +1,6 @@
+scopes:
+    users:
+        label: Users
+        modelClass: October\Test\Models\User
+        nameFrom: username
+        scope: filterByUser
